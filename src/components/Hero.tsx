@@ -54,16 +54,16 @@ function Hero() {
 
       <div className="bg-[#193151] rounded-t-lg max-w-7xl px-4 py-6 sm:px-6 lg:px-8 lg:-mt-10  mx-auto">
         <div className="mx-auto grid gap-6 grid-cols-1 md:grid-cols-2 sm:gap-12 lg:grid-cols-3 lg:gap-2">
-          <div className="mx-auto flex flex-wrap items-center">
+          <div className="lg:mx-auto flex flex-wrap items-center">
             <p className="text-4xl sm:text-5xl font-medium text-white">95%</p>
             <p className="mt-1 px-2 text-white">success in getting customers</p>
           </div>
 
-          <div className="mx-auto flex flex-wrap items-center">
-            <p className=" text-4xl sm:text-5xl font-medium text-white">2.5%</p>
+          <div className="lg:mx-auto flex flex-wrap items-center">
+            <p className="text-4xl sm:text-5xl font-medium text-white">2.5%</p>
             <p className="mt-1 px-2 text-white">potential increased traffic</p>
           </div>
-          <div className="mx-auto flex flex-wrap items-center">
+          <div className="lg:mx-auto flex flex-wrap items-center">
             <p className=" text-4xl sm:text-5xl font-medium text-white">10k</p>
             <p className="mt-1 px-2 text-white">projects completed</p>
           </div>
