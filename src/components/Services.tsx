@@ -18,7 +18,7 @@ function Services() {
     <div className="bg-[#F7F8FD]">
       <div className="max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         <h1 className="text-center font-medium pb-8 text-3xl lg:text-4xl">Managing your business with our best service</h1>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center gap-2">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center items-center gap-2">
           <a
             className="group flex flex-col justify-center bg-white hover:bg-[#193151] rounded-2xl p-4 md:p-7 shadow-sm"
             href="#"
@@ -33,7 +33,7 @@ function Services() {
               />
             </div>
             <div className="mt-5">
-              <h3 className="text-lg font-semibold text-gray-800 group-hover:text-white">
+              <h3 className="text-lg font-medium text-gray-800 group-hover:text-white">
                 Website Design
               </h3>
             </div>
@@ -53,7 +53,7 @@ function Services() {
               />
             </div>
             <div className="mt-5">
-              <h3 className="text-lg font-semibold text-gray-800 group-hover:text-white">
+              <h3 className="text-lg font-medium text-gray-800 group-hover:text-white">
                 Hosting
               </h3>
             </div>
@@ -73,7 +73,7 @@ function Services() {
               />
             </div>
             <div className="mt-5">
-              <h3 className="text-lg font-semibold text-gray-800 group-hover:text-white">
+              <h3 className="text-lg font-medium text-gray-800 group-hover:text-white">
                 Software Development
               </h3>
             </div>
@@ -93,7 +93,7 @@ function Services() {
               />
             </div>
             <div className="mt-5">
-              <h3 className="text-lg font-semibold text-gray-800 group-hover:text-white">
+              <h3 className="text-lg font-medium text-gray-800 group-hover:text-white">
                 Networking
               </h3>
             </div>
@@ -113,7 +113,7 @@ function Services() {
               />
             </div>
             <div className="mt-5">
-              <h3 className="text-lg font-semibold text-gray-800 group-hover:text-white">
+              <h3 className="text-lg font-medium text-gray-800 group-hover:text-white">
                 Hardware
               </h3>
             </div>
@@ -133,7 +133,7 @@ function Services() {
               />
             </div>
             <div className="mt-5">
-              <h3 className="text-lg font-semibold text-gray-800 group-hover:text-white">
+              <h3 className="text-lg font-medium text-gray-800 group-hover:text-white">
                 CCTV Services
               </h3>
             </div>
@@ -153,7 +153,7 @@ function Services() {
               />
             </div>
             <div className="mt-5">
-              <h3 className="text-lg font-semibold text-gray-800 group-hover:text-white">
+              <h3 className="text-lg font-medium text-gray-800 group-hover:text-white">
                 Telecom Services
               </h3>
             </div>
@@ -173,7 +173,7 @@ function Services() {
               />
             </div>
             <div className="mt-5">
-              <h3 className="text-lg font-semibold text-gray-800 group-hover:text-white">
+              <h3 className="text-lg font-medium text-gray-800 group-hover:text-white">
                 Graphic Design
               </h3>
             </div>
@@ -192,7 +192,7 @@ function Services() {
               />
             </div>
             <div className="mt-5">
-              <h3 className="text-lg font-semibold text-gray-800 group-hover:text-white">
+              <h3 className="text-lg font-medium text-gray-800 group-hover:text-white">
                 Mobile Apps
               </h3>
             </div>
@@ -211,8 +211,8 @@ function Services() {
               />
             </div>
             <div className="mt-5">
-              <h3 className="text-lg font-semibold text-gray-800 group-hover:text-white">
-                Telecommu<br/>nication
+              <h3 className="text-lg break-all font-medium text-gray-800 group-hover:text-white">
+                Telecommunication
               </h3>
             </div>
           </a>
@@ -230,7 +230,7 @@ function Services() {
               />
             </div>
             <div className="mt-5">
-              <h3 className="text-lg font-semibold text-gray-800 group-hover:text-white">
+              <h3 className="text-lg font-medium text-gray-800 group-hover:text-white">
                 E-Commerce
               </h3>
             </div>
@@ -249,7 +249,7 @@ function Services() {
               />
             </div>
             <div className="mt-5">
-              <h3 className="text-lg font-semibold text-gray-800 group-hover:text-white">
+              <h3 className="text-lg font-medium text-gray-800 group-hover:text-white">
                 Fiber Optics
               </h3>
             </div>

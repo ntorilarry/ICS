@@ -9,7 +9,7 @@ function Hero() {
         <Navbar />
         <section className=" flex items-center py-[3rem] lg:py-[4rem]">
           <div className=" px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-            <div className="grid max-w-lg grid-cols-1 mx-auto lg:max-w-full lg:items-center lg:grid-cols-2 gap-y-12 lg:gap-x-16">
+            <div className="lg:py-6 grid max-w-lg grid-cols-1 mx-auto lg:max-w-full lg:items-center lg:grid-cols-2 gap-y-12 lg:gap-x-16">
               <div>
                 <div className="text-center lg:text-left">
                   <span className="inline-flex items-center rounded-full bg-[#193151] font-medium bg-opacity-60 px-3 py-1 text-sm text-white shadow-sm">
@@ -22,7 +22,6 @@ function Hero() {
                     We may not always follow the trend, but we are guaranteed to
                     provide the best in digital services
                   </p>
-
                   <div className="flex items-center justify-center mt-4 space-x-5 lg:justify-start">
                     <button
                       type="button"
@@ -53,21 +52,56 @@ function Hero() {
       </div>
 
       <div className="bg-[#193151] rounded-t-lg max-w-7xl px-4 py-6 sm:px-6 lg:px-8 lg:-mt-10  mx-auto">
-        <div className="mx-auto grid gap-6 grid-cols-1 md:grid-cols-2 sm:gap-12 lg:grid-cols-3 lg:gap-2">
-          <div className="lg:mx-auto flex flex-wrap items-center">
-            <p className="text-4xl sm:text-5xl font-medium text-white">95%</p>
-            <p className="mt-1 px-2 text-white">success in getting customers</p>
-          </div>
+        <section className="">
+          <div className="max-w-7xl px-4 mx-auto sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 gap-8 mt-10 text-center lg:mt-0 sm:gap-x-8 md:grid-cols-3">
+              <div>
+                <h3 className="font-semibold text-5xl">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600">
+                    {" "}
+                    6+{" "}
+                  </span>
+                </h3>
+                <p className="text-xl font-medium text-white">
+                  Years in business
+                </p>
+                <p className="text-base mt-0.5 text-white">
+                  Creating the successful path
+                </p>
+              </div>
 
-          <div className="lg:mx-auto flex flex-wrap items-center">
-            <p className="text-4xl sm:text-5xl font-medium text-white">2.5%</p>
-            <p className="mt-1 px-2 text-white">potential increased traffic</p>
+              <div>
+                <h3 className="font-semibold text-5xl">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600">
+                    {" "}
+                    4821{" "}
+                  </span>
+                </h3>
+                <p className="text-xl font-medium text-white">
+                  Projects delivered
+                </p>
+                <p className="text-base mt-0.5 text-white">
+                  In last 6 years
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-semibold text-5xl">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600">
+                    {" "}
+                    37+{" "}
+                  </span>
+                </h3>
+                <p className="text-xl font-medium text-white">
+                  Team members
+                </p>
+                <p className="text-base mt-0.5 text-white">
+                  Working for your success
+                </p>
+              </div>
+            </div>
           </div>
-          <div className="lg:mx-auto flex flex-wrap items-center">
-            <p className=" text-4xl sm:text-5xl font-medium text-white">10k</p>
-            <p className="mt-1 px-2 text-white">projects completed</p>
-          </div>
-        </div>
+        </section>
       </div>
     </div>
   );
