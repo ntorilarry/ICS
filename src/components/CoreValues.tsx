@@ -32,7 +32,7 @@ function CoreValues() {
             <div className="py-4 space-y-2">
               <div className="lg:flex">
                 <img src={Customer} alt="" />
-                <div className="lg:px-2">
+                <div className="py-2 lg:px-2">
                   <h1 className="text-xl font-semibold">Customer Commitment</h1>
                   <p>
                     We develop relationship that make positive difference in our
@@ -44,7 +44,7 @@ function CoreValues() {
             <div className="py-4 space-y-2">
               <div className="lg:flex">
                 <img src={Teamwork} alt="" />
-                <div className="lg:px-2">
+                <div className="py-2 lg:px-2">
                   <h1 className="text-xl font-semibold">Teamwork</h1>
                   <p>
                     We provide outstanding product and unsurpassed service that,
@@ -56,7 +56,7 @@ function CoreValues() {
             <div className="py-4 space-y-2">
               <div className="lg:flex">
                 <img src={Integrity} alt="" />
-                <div className="lg:px-2">
+                <div className="py-2 lg:px-2">
                   <h1 className="text-xl font-semibold">Integrity</h1>
                   <p>
                     We work together, cross boundaries, to meet the needs of our
@@ -68,7 +68,7 @@ function CoreValues() {
             <div className="py-4 space-y-2">
               <div className="lg:flex">
                 <img src={PA} alt="" />
-                <div className="lg:px-2">
+                <div className="py-2 lg:px-2">
                   <h1 className="text-xl font-semibold">
                     Personal Accountability
                   </h1>
@@ -82,7 +82,7 @@ function CoreValues() {
             <div className="py-4 space-y-2">
               <div className="lg:flex">
                 <img src={Win} alt="" />
-                <div className="lg:px-2">
+                <div className="py-2 lg:px-2">
                   <h1 className="text-xl font-semibold">A Will to Win</h1>
                   <p>
                     We exhibit a strong will to win in the marketplace and in

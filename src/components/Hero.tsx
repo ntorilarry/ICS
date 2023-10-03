@@ -54,7 +54,7 @@ function Hero() {
       <div className="bg-[#193151] rounded-t-lg max-w-7xl px-4 py-6 sm:px-6 lg:px-8 lg:-mt-10  mx-auto">
         <section className="">
           <div className="max-w-7xl px-4 mx-auto sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 gap-8 mt-10 text-center lg:mt-0 sm:gap-x-8 md:grid-cols-3">
+            <div className="grid grid-cols-1 gap-8 text-center sm:gap-x-8 md:grid-cols-3">
               <div>
                 <h3 className="font-semibold text-5xl">
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600">
