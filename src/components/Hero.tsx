@@ -1,6 +1,9 @@
 import React from "react";
 import Navbar from "./Navbar";
 import { Player } from "@lottiefiles/react-lottie-player";
+import CountUp from 'react-countup';
+
+import VisibilitySensor from 'react-visibility-sensor';
 
 function Hero() {
   return (
@@ -58,8 +61,16 @@ function Hero() {
               <div>
                 <h3 className="font-semibold text-5xl">
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600">
-                    {" "}
-                    6+{" "}
+                  <>
+                  <CountUp end={6} redraw={true}>
+                    {({ countUpRef, start }) => (
+                      <VisibilitySensor onChange={start} delayedCall>
+                        <span ref={countUpRef} />
+                      </VisibilitySensor>
+                    )}
+                  </CountUp>
+                  +
+                </>
                   </span>
                 </h3>
                 <p className="text-xl font-medium text-white">
@@ -73,8 +84,16 @@ function Hero() {
               <div>
                 <h3 className="font-semibold text-5xl">
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600">
-                    {" "}
-                    4821{" "}
+                   
+                  <>
+                  <CountUp end={4821} redraw={true}>
+                    {({ countUpRef, start }) => (
+                      <VisibilitySensor onChange={start} delayedCall>
+                        <span ref={countUpRef} />
+                      </VisibilitySensor>
+                    )}
+                  </CountUp>
+                </>
                   </span>
                 </h3>
                 <p className="text-xl font-medium text-white">
@@ -88,8 +107,17 @@ function Hero() {
               <div>
                 <h3 className="font-semibold text-5xl">
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600">
-                    {" "}
-                    37+{" "}
+                   
+                  <>
+                  <CountUp end={37} redraw={true}>
+                    {({ countUpRef, start }) => (
+                      <VisibilitySensor onChange={start} delayedCall>
+                        <span ref={countUpRef} />
+                      </VisibilitySensor>
+                    )}
+                  </CountUp>
+                  +
+                </>
                   </span>
                 </h3>
                 <p className="text-xl font-medium text-white">
