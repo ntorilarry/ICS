@@ -70,7 +70,7 @@ export default function Navbar() {
             <Menu.Item>
               {({ active }) => (
                 <a
-                  href="#"
+                  href="/#services"
                   className={`${
                     active ? "bg-muted-1 text-heading" : "text-text"
                   } flex w-full cursor-pointer items-center px-4 py-2 text-sm font-medium`}
@@ -81,26 +81,26 @@ export default function Navbar() {
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href="#"
+                <NavLink
+                  to="/about-us"
                   className={`${
                     active ? "bg-muted-1 text-heading" : "text-text"
                   } flex w-full cursor-pointer items-center px-4 py-2 text-sm font-medium`}
                 >
                   About
-                </a>
+                </NavLink>
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href="#"
+                <NavLink
+                  to="/projects"
                   className={`${
                     active ? "bg-muted-1 text-heading" : "text-text"
                   } flex w-full cursor-pointer items-center px-4 py-2 text-sm font-medium`}
                 >
                   Projects
-                </a>
+                </NavLink>
               )}
             </Menu.Item>
             <Menu.Item>
