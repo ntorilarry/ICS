@@ -1,15 +1,17 @@
 import React from "react";
+import Navbar from "../components/Navbar";
 
 function Projects() {
   return (
     <div>
-      <section className="bg-white dark:bg-gray-900">
-        <div className="container px-6 py-10 mx-auto">
-          <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">
+      <Navbar />
+      <section className="bg-white">
+        <div className="max-w-7xl container px-6 py-10 mx-auto">
+          <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl">
             Portfolio
           </h1>
 
-          <p className="mt-4 text-center text-gray-500 dark:text-gray-300">
+          <p className="mt-4 text-center text-gray-500">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum
             quam voluptatibus
           </p>

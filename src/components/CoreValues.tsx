@@ -22,72 +22,51 @@ function CoreValues() {
           ></div>
           <div className="flex flex-col col-span-12 p-6 divide-y lg:col-span-6 lg:p-10 divide-gray-200">
             <div className="py-4 space-y-2">
-              <div className="lg:flex">
+              <div className="flex items-center">
                 <h1 className="text-2xl lg:text-3xl font-semibold">
-                  Our values reflect who we are and what we stand for as a
-                  company:
+                  Core Values
                 </h1>
               </div>
             </div>
             <div className="py-4 space-y-2">
-              <div className="lg:flex">
+              <div className="flex items-center">
                 <img src={Customer} alt="" />
-                <div className="py-2 lg:px-2">
-                  <h1 className="text-xl font-semibold">Customer Commitment</h1>
-                  <p>
-                    We develop relationship that make positive difference in our
-                    customers’ lives.
-                  </p>
+                <div className="py-2 px-2">
+                  <h1 className="text-xl font-semibold">Timeliness</h1>
                 </div>
               </div>
             </div>
             <div className="py-4 space-y-2">
-              <div className="lg:flex">
+              <div className="flex items-center">
                 <img src={Teamwork} alt="" />
-                <div className="py-2 lg:px-2">
-                  <h1 className="text-xl font-semibold">Teamwork</h1>
-                  <p>
-                    We provide outstanding product and unsurpassed service that,
-                    together, deliver premium value to our customers.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="py-4 space-y-2">
-              <div className="lg:flex">
-                <img src={Integrity} alt="" />
-                <div className="py-2 lg:px-2">
-                  <h1 className="text-xl font-semibold">Integrity</h1>
-                  <p>
-                    We work together, cross boundaries, to meet the needs of our
-                    customers and to help the company win.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="py-4 space-y-2">
-              <div className="lg:flex">
-                <img src={PA} alt="" />
-                <div className="py-2 lg:px-2">
+                <div className="py-2 px-2">
                   <h1 className="text-xl font-semibold">
-                    Personal Accountability
+                    Competence with creativity
                   </h1>
-                  <p>
-                    We are personally accountable for delivering on our
-                    commitments.
-                  </p>
                 </div>
               </div>
             </div>
             <div className="py-4 space-y-2">
-              <div className="lg:flex">
+              <div className="flex items-center">
+                <img src={Integrity} alt="" />
+                <div className="py-2 px-2">
+                  <h1 className="text-xl font-semibold">Client Satisfaction</h1>
+                </div>
+              </div>
+            </div>
+            <div className="py-4 space-y-2">
+              <div className="flex items-center">
+                <img src={PA} alt="" />
+                <div className="py-2 px-2">
+                  <h1 className="text-xl font-semibold">Excellence</h1>
+                </div>
+              </div>
+            </div>
+            <div className="py-4 space-y-2">
+              <div className="flex items-center">
                 <img src={Win} alt="" />
-                <div className="py-2 lg:px-2">
-                  <h1 className="text-xl font-semibold">A Will to Win</h1>
-                  <p>
-                    We exhibit a strong will to win in the marketplace and in
-                    every aspect of our business
-                  </p>
+                <div className="py-2 px-2">
+                  <h1 className="text-xl font-semibold">Accuracy</h1>
                 </div>
               </div>
             </div>

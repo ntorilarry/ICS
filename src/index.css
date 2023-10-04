@@ -4,6 +4,7 @@
 
 * {
   font-family: "Clash Display", sans-serif;
+  scroll-behavior: smooth;
 }
 .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   width: 30px;

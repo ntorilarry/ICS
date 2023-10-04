@@ -3,6 +3,8 @@ import logo from "./logo.svg";
 import "./App.css";
 import Home from "./pages/Home";
 import { Route, Routes } from "react-router-dom";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
         {/* Main Routes */}
         <Route>
           <Route path="/" element={<Home />} />
+          <Route path="/about-us" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
         </Route>
       </Routes>
     </div>

@@ -1,5 +1,5 @@
 import { Player } from "@lottiefiles/react-lottie-player";
-import React from "react";
+import React, { useRef } from "react";
 import Hosting from "../assets/animation_hosting.json";
 import WebDesign from "../assets/animation_webdesign.json";
 import Software from "../assets/animation_softwareDevelopment.json";
@@ -15,7 +15,7 @@ import Fiber from "../assets/fiber.json";
 
 function Services() {
   return (
-    <div className="bg-[#F7F8FD]">
+    <div className="bg-[#F7F8FD]" id="services" >
       <div className="max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         <h1 className="text-center font-medium pb-8 text-3xl lg:text-4xl">Managing your business with our best service</h1>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center items-center gap-2">
