@@ -13,7 +13,7 @@ function Footer() {
               <div>
                 <a href="/">
                   {/* Logo */}
-                  <img className="w-40" src={Logo} alt="" />
+                  <img className="w-44" src={Logo} alt="" />
                 </a>
                 <div className="mt-4 lg:max-w-sm">
                   <p className="text-sm text-white">
