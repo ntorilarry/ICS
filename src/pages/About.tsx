@@ -6,6 +6,7 @@ function About() {
   return (
     <div>
       <Navbar />
+      {/* Header */}
       <div className="bg-slate-900">
         <div className="bg-gradient-to-b from-violet-600/[.15] via-transparent">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 space-y-8">
@@ -50,6 +51,7 @@ function About() {
           </div>
         </div>
       </div>
+      {/* Contents */}
       <div className="max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         <div className="grid md:grid-cols-2 gap-12">
           <div className="lg:w-3/4">
@@ -269,6 +271,38 @@ function About() {
           </div>
         </div>
       </div>
+
+      {/* Benefits */}
+      <div className="px-4  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+        <div className="flex flex-col max-w-7xl overflow-hidden bg-white border rounded shadow-sm lg:flex-row sm:mx-auto">
+          <div className="relative lg:w-1/2">
+            <img
+              src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+              alt=""
+              className="object-cover w-full lg:absolute h-80 lg:h-full"
+            />
+            <svg
+              className="absolute top-0 right-0 hidden h-full text-white lg:inline-block"
+              viewBox="0 0 20 104"
+              fill="currentColor"
+            >
+              <polygon points="17.3036738 5.68434189e-14 20 5.68434189e-14 20 104 0.824555778 104" />
+            </svg>
+          </div>
+          <div className="flex flex-col justify-center p-8 bg-white lg:p-16 lg:pl-10 lg:w-1/2">
+            <h5 className="mb-3 text-3xl font-semibold leading-none sm:text-4xl">
+              Benefits
+            </h5>
+            <p className="mb-5 text-gray-800">
+              At International Conglomerate Solutions Limited, you will
+              experience both a vibrant small-company culture and the inclusive
+              benefits and rewards that traditionally come with working at a
+              larger organization.
+            </p>
+          </div>
+        </div>
+      </div>
+
       <Team />
     </div>
   );
