@@ -17,28 +17,28 @@ export default function Navbar() {
         <div className="absolute inset-y-0 inset-x-0 hidden items-center justify-center space-x-1.5 px-4 lg:flex">
           <a
             href="/#services"
-            className="inline-flex cursor-pointer items-center justify-center rounded-xl border-2 border-transparent bg-transparent px-4 py-2.5 text-base font-medium text-text hover:bg-heading/5 hover:text-heading focus:bg-heading/5 focus:outline-none focus:ring-2 focus:ring-heading/80 focus:ring-offset-0 disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:text-text"
+            className="inline-flex cursor-pointer items-center justify-center  px-4 py-2.5 text-base font-medium text-text navlink"
           >
             Services
           </a>
           <NavLink
             to="/about-us"
-            className="inline-flex active:border-2 cursor-pointer items-center justify-center rounded-xl border-2 border-transparent bg-transparent px-4 py-2.5 text-base font-medium text-text hover:bg-heading/5 hover:text-heading focus:bg-heading/5 focus:outline-none focus:ring-2 focus:ring-heading/80 focus:ring-offset-0 disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:text-text"
+            className="inline-flex cursor-pointer items-center justify-center  px-4 py-2.5 text-base font-medium text-text navlink"
           >
             About
           </NavLink>
           <NavLink
             to="/projects"
-            className="inline-flex cursor-pointer items-center justify-center rounded-xl border-2 border-transparent bg-transparent px-4 py-2.5 text-base font-medium text-text hover:bg-heading/5 hover:text-heading focus:bg-heading/5 focus:outline-none focus:ring-2 focus:ring-heading/80 focus:ring-offset-0 disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:text-text"
+            className="inline-flex cursor-pointer items-center justify-center  px-4 py-2.5 text-base font-medium text-text navlink"
           >
             Projects
           </NavLink>
-          <a
-            href="#"
-            className="inline-flex cursor-pointer items-center justify-center rounded-xl border-2 border-transparent bg-transparent px-4 py-2.5 text-base font-medium text-text hover:bg-heading/5 hover:text-heading focus:bg-heading/5 focus:outline-none focus:ring-2 focus:ring-heading/80 focus:ring-offset-0 disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:text-text"
+          <NavLink
+            to="/blog"
+            className="inline-flex cursor-pointer items-center justify-center  px-4 py-2.5 text-base font-medium text-text navlink"
           >
             Blog
-          </a>
+          </NavLink>
         </div>
       </div>
       <div className="z-10">
@@ -53,7 +53,7 @@ export default function Navbar() {
       <Menu as="div" className="relative lg:hidden">
         <Menu.Button
           type="button"
-          className="inline-flex cursor-pointer items-center justify-center rounded-xl border-none border-transparent bg-transparent p-2 font-medium text-text hover:bg-heading/5 hover:text-heading focus:bg-heading/5 focus:outline-none focus:ring-2 focus:ring-heading/80 focus:ring-offset-0 disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:text-text"
+          className="inline-flex cursor-pointer items-center justify-center rounded-xl border-none border-transparent bg-transparent p-2 font-medium text-text navlink"
         >
           <HiMenuAlt1 className="h-5 w-5" />
         </Menu.Button>
@@ -105,14 +105,14 @@ export default function Navbar() {
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href="#"
+                <NavLink
+                  to="/blog"
                   className={`${
                     active ? "bg-muted-1 text-heading" : "text-text"
                   } flex w-full cursor-pointer items-center px-4 py-2 text-sm font-medium`}
                 >
                   Blog
-                </a>
+                </NavLink>
               )}
             </Menu.Item>
             <Menu.Item>

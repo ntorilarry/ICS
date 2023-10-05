@@ -17,3 +17,8 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+.navlink.active{
+  border-bottom: 2px solid #193151;
+
+}

@@ -4,6 +4,7 @@ import Integrity from "../assets/integrity.svg";
 import PA from "../assets/personal assistant.svg";
 import Teamwork from "../assets/teamwork.svg";
 import Win from "../assets/win.svg";
+import ICS from "../assets/ICS.png"
 
 function CoreValues() {
   return (
@@ -14,7 +15,7 @@ function CoreValues() {
             className="flex flex-col justify-center col-span-12 align-middle bg-no-repeat lg:col-span-6 lg:h-auto"
             style={{
               backgroundImage:
-                "url('https://source.unsplash.com/random/640x480')",
+                `url(${ICS})`,
               backgroundPosition: "center center",
               backgroundBlendMode: "multiply",
               backgroundSize: "cover",

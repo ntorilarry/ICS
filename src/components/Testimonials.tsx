@@ -7,6 +7,10 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import William from "../assets/William-Agyi-Manu.jpg";
+import Evans from "../assets/Mr-Evans-Larbi-Beit-Farms.jpg";
+import Amoateng from "../assets/Mr.-Amoateng-liberty-medical-laboratory.jpg";
+
 
 function Testimonials() {
   return (
@@ -62,9 +66,11 @@ function Testimonials() {
                     <div className="flex flex-col bg-white rounded-xl">
                       <div className="flex-auto p-4 md:p-6">
                         <p className="text-base italic md:text-lg text-gray-800">
-                          " With Preline, we're able to easily track our
-                          performance in full detail. It's become an essential
-                          tool for us to grow and engage with our audience. "
+                          "I went live with the new theme and my site went from
+                          "some old ", same old to "WOW!" Now I get a lot of
+                          customers calling for prices list and orders! Its
+                          makes me smile every-time i click over to it! and
+                          Because it designed to be flexible."
                         </p>
                       </div>
 
@@ -73,17 +79,17 @@ function Testimonials() {
                           <div className="flex-shrink-0">
                             <img
                               className="h-8 w-8 rounded-full sm:h-[2.875rem] sm:w-[2.875rem]"
-                              src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
-                              alt="Image Description"
+                              src={William}
+                              alt=""
                             />
                           </div>
 
                           <div className="grow ml-3">
                             <p className="text-sm sm:text-base font-semibold text-gray-800">
-                              Josh Tyson
+                              William Agyi-Manu
                             </p>
                             <p className="text-xs text-gray-500 dark:text-gray-400">
-                              Product Manager | Capsule
+                              Ghana Cassava centre, Accra, GH
                             </p>
                           </div>
                         </div>
@@ -96,10 +102,12 @@ function Testimonials() {
                     <div className="flex flex-col bg-white rounded-xl">
                       <div className="flex-auto p-4 md:p-6">
                         <p className="text-base italic md:text-lg text-gray-800">
-                          " In September, I will be using this theme for 2
-                          years. I went through multiple updates and changes and
-                          I'm very glad to see the consistency and effort made
-                          by the team. "
+                          "I can't believe how far i have come in the last 6
+                          months. Thanks to each and everyone all that put into
+                          creating this awesome website and jumping into doing
+                          the work that i absolutely love to execute to the
+                          world. If i can help in any way in the future count on
+                          me."
                         </p>
                       </div>
 
@@ -108,17 +116,17 @@ function Testimonials() {
                           <div className="flex-shrink-0">
                             <img
                               className="h-8 w-8 rounded-full sm:h-[2.875rem] sm:w-[2.875rem]"
-                              src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
-                              alt="Image Description"
+                              src={Evans}
+                              alt=""
                             />
                           </div>
 
                           <div className="grow ml-3">
                             <p className="text-sm sm:text-base font-semibold text-gray-800">
-                              Luisa
+                              Mr Evans Larbi
                             </p>
                             <p className="text-xs text-gray-500 dark:text-gray-400">
-                              Senior Director of Operations | Fitbit
+                              Beit Farms, Accra, GH
                             </p>
                           </div>
                         </div>
@@ -131,10 +139,10 @@ function Testimonials() {
                     <div className="flex flex-col bg-white rounded-xl">
                       <div className="flex-auto p-4 md:p-6">
                         <p className="text-base italic md:text-lg text-gray-800">
-                          " Refreshing and Thought provoking design and it
-                          changes my view about how I design the websites. Great
-                          typography, modern clean white design, nice tones of
-                          the color. "
+                          "Our inbound leads have grown so dramatically from our
+                          website and search optimization that we have hired a
+                          dedicated team that now works on the leads, which was
+                          never the case before hosting and running our website"
                         </p>
                       </div>
 
@@ -143,17 +151,17 @@ function Testimonials() {
                           <div className="flex-shrink-0">
                             <img
                               className="h-8 w-8 rounded-full sm:h-[2.875rem] sm:w-[2.875rem]"
-                              src="https://images.unsplash.com/photo-1579017331263-ef82f0bbc748?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80"
-                              alt="Image Description"
+                              src={Amoateng}
+                              alt=""
                             />
                           </div>
 
                           <div className="grow ml-3">
                             <p className="text-sm sm:text-base font-semibold text-gray-800">
-                              Alisa Williams
+                              Mr. Amoateng
                             </p>
                             <p className="text-xs text-gray-500 dark:text-gray-400">
-                              Entrepreneur | Happy customer
+                              Liberty Medical Laboratory, Accra, GH
                             </p>
                           </div>
                         </div>
@@ -166,9 +174,11 @@ function Testimonials() {
                     <div className="flex flex-col bg-white rounded-xl">
                       <div className="flex-auto p-4 md:p-6">
                         <p className="text-base italic md:text-lg text-gray-800">
-                          " With Preline, we're able to easily track our
-                          performance in full detail. It's become an essential
-                          tool for us to grow and engage with our audience. "
+                          "I went live with the new theme and my site went from
+                          "some old ", same old to "WOW!" Now I get a lot of
+                          customers calling for prices list and orders! Its
+                          makes me smile every-time i click over to it! and
+                          Because it designed to be flexible."
                         </p>
                       </div>
 
@@ -177,17 +187,17 @@ function Testimonials() {
                           <div className="flex-shrink-0">
                             <img
                               className="h-8 w-8 rounded-full sm:h-[2.875rem] sm:w-[2.875rem]"
-                              src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
-                              alt="Image Description"
+                              src={William}
+                              alt=""
                             />
                           </div>
 
                           <div className="grow ml-3">
                             <p className="text-sm sm:text-base font-semibold text-gray-800">
-                              Josh Tyson
+                              William Agyi-Manu
                             </p>
                             <p className="text-xs text-gray-500 dark:text-gray-400">
-                              Product Manager | Capsule
+                              Ghana Cassava centre, Accra, GH
                             </p>
                           </div>
                         </div>
@@ -200,10 +210,12 @@ function Testimonials() {
                     <div className="flex flex-col bg-white rounded-xl">
                       <div className="flex-auto p-4 md:p-6">
                         <p className="text-base italic md:text-lg text-gray-800">
-                          " In September, I will be using this theme for 2
-                          years. I went through multiple updates and changes and
-                          I'm very glad to see the consistency and effort made
-                          by the team. "
+                          "I can't believe how far i have come in the last 6
+                          months. Thanks to each and everyone all that put into
+                          creating this awesome website and jumping into doing
+                          the work that i absolutely love to execute to the
+                          world. If i can help in any way in the future count on
+                          me."
                         </p>
                       </div>
 
@@ -212,17 +224,17 @@ function Testimonials() {
                           <div className="flex-shrink-0">
                             <img
                               className="h-8 w-8 rounded-full sm:h-[2.875rem] sm:w-[2.875rem]"
-                              src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
-                              alt="Image Description"
+                              src={Evans}
+                              alt=""
                             />
                           </div>
 
                           <div className="grow ml-3">
                             <p className="text-sm sm:text-base font-semibold text-gray-800">
-                              Luisa
+                              Mr Evans Larbi
                             </p>
                             <p className="text-xs text-gray-500 dark:text-gray-400">
-                              Senior Director of Operations | Fitbit
+                              Beit Farms, Accra, GH
                             </p>
                           </div>
                         </div>
@@ -235,10 +247,10 @@ function Testimonials() {
                     <div className="flex flex-col bg-white rounded-xl">
                       <div className="flex-auto p-4 md:p-6">
                         <p className="text-base italic md:text-lg text-gray-800">
-                          " Refreshing and Thought provoking design and it
-                          changes my view about how I design the websites. Great
-                          typography, modern clean white design, nice tones of
-                          the color. "
+                          "Our inbound leads have grown so dramatically from our
+                          website and search optimization that we have hired a
+                          dedicated team that now works on the leads, which was
+                          never the case before hosting and running our website"
                         </p>
                       </div>
 
@@ -247,17 +259,17 @@ function Testimonials() {
                           <div className="flex-shrink-0">
                             <img
                               className="h-8 w-8 rounded-full sm:h-[2.875rem] sm:w-[2.875rem]"
-                              src="https://images.unsplash.com/photo-1579017331263-ef82f0bbc748?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80"
-                              alt="Image Description"
+                              src={Amoateng}
+                              alt=""
                             />
                           </div>
 
                           <div className="grow ml-3">
                             <p className="text-sm sm:text-base font-semibold text-gray-800">
-                              Alisa Williams
+                              Mr. Amoateng
                             </p>
                             <p className="text-xs text-gray-500 dark:text-gray-400">
-                              Entrepreneur | Happy customer
+                              Liberty Medical Laboratory, Accra, GH
                             </p>
                           </div>
                         </div>
