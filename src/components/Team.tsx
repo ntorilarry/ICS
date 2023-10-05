@@ -14,7 +14,7 @@ export const Team = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
         <div className="text-center">
           <img
             className="rounded-xl sm:w-48 sm:h-48 lg:w-64 lg:h-72 mx-auto "
