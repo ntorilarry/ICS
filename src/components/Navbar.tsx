@@ -2,7 +2,7 @@ import { Fragment, useCallback } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { HiMenuAlt1 } from "react-icons/hi";
 import Logo from "../assets/international conglomerate.png";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -42,12 +42,13 @@ export default function Navbar() {
         </div>
       </div>
       <div className="z-10">
-        <button
+        <Link
+          to="/contact-us"
           type="button"
           className=" cursor-pointer hidden lg:block items-center justify-center rounded-full border-2 border-[#193151] bg-transparent px-4 py-2.5 text-base font-medium text-[#193151]  shadow-sm hover:text-heading focus:text-heading focus:outline-none focus:ring-2 focus:ring-orange-400/80 focus:ring-offset-0 disabled:opacity-30 disabled:hover:text-text"
         >
           Contact Us
-        </button>
+        </Link>
       </div>
 
       <Menu as="div" className="relative lg:hidden">

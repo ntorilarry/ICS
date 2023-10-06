@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import { Team } from "../components/Team";
+import { Link } from "react-router-dom";
 
 function About() {
   return (
@@ -11,10 +12,7 @@ function About() {
         <div className="bg-gradient-to-b from-violet-600/[.15] via-transparent">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 space-y-8">
             <div className="flex justify-center">
-              <a
-                className="group inline-block bg-white/[.05] hover:bg-white/[.1] border border-white/[.05] p-1 pl-4 rounded-full shadow-md"
-                href="../figma.html"
-              >
+              <div className="group inline-block bg-white/[.05] hover:bg-white/[.1] border border-white/[.05] p-1 pl-4 rounded-full shadow-md">
                 <p className="mr-2 inline-block text-white text-sm">About Us</p>
                 <span className="group-hover:bg-white/[.1] py-2 px-3 inline-flex justify-center items-center gap-x-2 rounded-full bg-white/[.075] font-semibold text-white text-sm">
                   <svg
@@ -32,7 +30,7 @@ function About() {
                     />
                   </svg>
                 </span>
-              </a>
+              </div>
             </div>
 
             <div className="max-w-5xl text-center mx-auto">
@@ -64,8 +62,11 @@ function About() {
               our clients. We aim to solve digital solutions that create
               positive impact around the world.
             </p>
-            <p className="mt-5 inline-flex items-center gap-x-2 font-medium text-blue-600">
-              Contact sales to learn more
+            <Link
+              to="/contact-us"
+              className="mt-5 inline-flex items-center gap-x-2 font-medium text-blue-600"
+            >
+              Contact sales
               <svg
                 className="w-2.5 h-2.5 transition ease-in-out group-hover:translate-x-1"
                 width="16"
@@ -81,7 +82,7 @@ function About() {
                   fill="currentColor"
                 />
               </svg>
-            </p>
+            </Link>
 
             <h2 className="mt-6 text-3xl text-gray-800 font-semibold lg:text-4xl">
               Our Mission
@@ -94,8 +95,11 @@ function About() {
               technological breakthrough to propel our society towards digital
               diversity, equality and inclusion
             </p>
-            <p className="mt-5 inline-flex items-center gap-x-2 font-medium text-blue-600">
-              Contact sales to learn more
+            <Link
+              to="/contact-us"
+              className="mt-5 inline-flex items-center gap-x-2 font-medium text-blue-600"
+            >
+              Contact sales
               <svg
                 className="w-2.5 h-2.5 transition ease-in-out group-hover:translate-x-1"
                 width="16"
@@ -111,7 +115,7 @@ function About() {
                   fill="currentColor"
                 />
               </svg>
-            </p>
+            </Link>
           </div>
 
           <div className="space-y-6">

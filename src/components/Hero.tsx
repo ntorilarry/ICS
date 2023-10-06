@@ -1,9 +1,10 @@
 import React from "react";
 import Navbar from "./Navbar";
 import { Player } from "@lottiefiles/react-lottie-player";
-import CountUp from 'react-countup';
+import CountUp from "react-countup";
 
-import VisibilitySensor from 'react-visibility-sensor';
+import VisibilitySensor from "react-visibility-sensor";
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
@@ -26,12 +27,13 @@ function Hero() {
                     provide the best in digital services
                   </p>
                   <div className="flex items-center justify-center mt-4 space-x-5 lg:justify-start">
-                    <button
+                    <Link
+                      to="/contact-us"
                       type="button"
                       className=" cursor-pointer items-center justify-center rounded-full border-2 border-[#193151] bg-transparent px-4 py-2.5 text-base font-medium text-[#193151]  shadow-sm hover:text-heading focus:text-heading focus:outline-none focus:ring-2 focus:ring-orange-400/80 focus:ring-offset-0 disabled:opacity-30 disabled:hover:text-text"
                     >
                       Contact Us
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -61,16 +63,16 @@ function Hero() {
               <div>
                 <h3 className="font-semibold text-5xl">
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600">
-                  <>
-                  <CountUp end={6} redraw={true}>
-                    {({ countUpRef, start }) => (
-                      <VisibilitySensor onChange={start} delayedCall>
-                        <span ref={countUpRef} />
-                      </VisibilitySensor>
-                    )}
-                  </CountUp>
-                  +
-                </>
+                    <>
+                      <CountUp end={6} redraw={true}>
+                        {({ countUpRef, start }) => (
+                          <VisibilitySensor onChange={start} delayedCall>
+                            <span ref={countUpRef} />
+                          </VisibilitySensor>
+                        )}
+                      </CountUp>
+                      +
+                    </>
                   </span>
                 </h3>
                 <p className="text-xl font-medium text-white">
@@ -84,45 +86,39 @@ function Hero() {
               <div>
                 <h3 className="font-semibold text-5xl">
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600">
-                   
-                  <>
-                  <CountUp end={4821} redraw={true}>
-                    {({ countUpRef, start }) => (
-                      <VisibilitySensor onChange={start} delayedCall>
-                        <span ref={countUpRef} />
-                      </VisibilitySensor>
-                    )}
-                  </CountUp>
-                </>
+                    <>
+                      <CountUp end={4821} redraw={true}>
+                        {({ countUpRef, start }) => (
+                          <VisibilitySensor onChange={start} delayedCall>
+                            <span ref={countUpRef} />
+                          </VisibilitySensor>
+                        )}
+                      </CountUp>
+                    </>
                   </span>
                 </h3>
                 <p className="text-xl font-medium text-white">
                   Projects delivered
                 </p>
-                <p className="text-base mt-0.5 text-white">
-                  In last 6 years
-                </p>
+                <p className="text-base mt-0.5 text-white">In last 6 years</p>
               </div>
 
               <div>
                 <h3 className="font-semibold text-5xl">
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600">
-                   
-                  <>
-                  <CountUp end={37} redraw={true}>
-                    {({ countUpRef, start }) => (
-                      <VisibilitySensor onChange={start} delayedCall>
-                        <span ref={countUpRef} />
-                      </VisibilitySensor>
-                    )}
-                  </CountUp>
-                  +
-                </>
+                    <>
+                      <CountUp end={37} redraw={true}>
+                        {({ countUpRef, start }) => (
+                          <VisibilitySensor onChange={start} delayedCall>
+                            <span ref={countUpRef} />
+                          </VisibilitySensor>
+                        )}
+                      </CountUp>
+                      +
+                    </>
                   </span>
                 </h3>
-                <p className="text-xl font-medium text-white">
-                  Team members
-                </p>
+                <p className="text-xl font-medium text-white">Team members</p>
                 <p className="text-base mt-0.5 text-white">
                   Working for your success
                 </p>
