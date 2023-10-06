@@ -118,13 +118,13 @@ export default function Navbar() {
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <button
+                <Link to="/contact-us"
                   className={`${
                     active ? "bg-muted-1 text-heading" : "text-text"
                   } flex w-full cursor-pointer items-center px-4 py-2 text-sm font-medium`}
                 >
                   Contact Us
-                </button>
+                </Link>
               )}
             </Menu.Item>
           </Menu.Items>
