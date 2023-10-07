@@ -42,10 +42,16 @@ export default function Navbar() {
         </div>
       </div>
       <div className="z-10">
-        <Link
+        {/* <Link
           to="/contact-us"
           type="button"
           className=" cursor-pointer hidden lg:block items-center justify-center rounded-full border-2 border-[#193151] bg-transparent px-4 py-2.5 text-base font-medium text-[#193151]  shadow-sm hover:text-heading focus:text-heading focus:outline-none focus:ring-2 focus:ring-orange-400/80 focus:ring-offset-0 disabled:opacity-30 disabled:hover:text-text"
+        >
+          Contact Us
+        </Link> */}
+        <Link
+          to="/contact-us"
+          className="hidden lg:block items-center justify-center px-4 py-2 text-base font-medium leading-6 text-white whitespace-no-wrap bg-[#193151] border-2 border-transparent rounded-full shadow-sm hover:bg-transparent hover:text-[#193151] hover:border-[#193151] focus:outline-none"
         >
           Contact Us
         </Link>
@@ -118,7 +124,8 @@ export default function Navbar() {
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <Link to="/contact-us"
+                <Link
+                  to="/contact-us"
                   className={`${
                     active ? "bg-muted-1 text-heading" : "text-text"
                   } flex w-full cursor-pointer items-center px-4 py-2 text-sm font-medium`}

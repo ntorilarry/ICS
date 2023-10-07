@@ -29,10 +29,14 @@ function Hero() {
                   <div className="flex items-center justify-center mt-4 space-x-5 lg:justify-start">
                     <Link
                       to="/contact-us"
-                      type="button"
-                      className=" cursor-pointer items-center justify-center rounded-full border-2 border-[#193151] bg-transparent px-4 py-2.5 text-base font-medium text-[#193151]  shadow-sm hover:text-heading focus:text-heading focus:outline-none focus:ring-2 focus:ring-orange-400/80 focus:ring-offset-0 disabled:opacity-30 disabled:hover:text-text"
+                      className="relative inline-flex items-center justify-start px-5 py-3 overflow-hidden font-semibold rounded-full group"
                     >
-                      Contact Us
+                      <span className="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-[#193151] opacity-[3%]"></span>
+                      <span className="absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-[#193151] opacity-100 group-hover:-translate-x-8"></span>
+                      <span className="relative w-full text-left text-[#193151] transition-colors duration-200 ease-in-out group-hover:text-white">
+                        Contact Us
+                      </span>
+                      <span className="absolute inset-0 border-2 border-[#193151] rounded-full"></span>
                     </Link>
                   </div>
                 </div>
