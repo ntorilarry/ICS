@@ -1,11 +1,36 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import { RiTwitterXFill } from "react-icons/ri";
+import toast, { Toaster } from 'react-hot-toast';
 
 function Contact() {
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "af6c8a91-b167-4d3a-946f-86eae5b3e5e7");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: json,
+    }).then((res) => res.json());
+
+    if (res.success) {
+      console.log("Success", res);
+      toast.success("Message sent, we will respond to you soon")
+    }
+  };
   return (
     <div>
       <Navbar />
+      <Toaster/>
       <section className="min-h-screen bg-white lg:flex">
         <div className="flex flex-col justify-center w-full p-8 lg:bg-gray-100 lg:px-12 xl:px-32 lg:w-1/2">
           <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl">
@@ -98,7 +123,7 @@ function Contact() {
         </div>
 
         <div className="flex flex-col justify-center w-full p-8 pt-0 lg:w-1/2 lg:px-12 xl:px-24 ">
-          <form>
+          <form onSubmit={onSubmit}>
             <div className="-mx-2 md:items-center md:flex">
               <div className="flex-1 px-2">
                 <label className="block mb-2 text-base font-medium text-gray-600">
@@ -106,6 +131,7 @@ function Contact() {
                 </label>
                 <input
                   type="text"
+                  name="name"
                   placeholder="John Doe"
                   className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                 />
@@ -117,6 +143,7 @@ function Contact() {
                 </label>
                 <input
                   type="email"
+                  name="email"
                   placeholder="johndoe@example.com"
                   className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                 />
@@ -130,10 +157,14 @@ function Contact() {
               <textarea
                 className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-56 focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                 placeholder="Message"
+                name="message"
               ></textarea>
             </div>
 
-            <button className="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
+            <button
+              type="submit"
+              className="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50"
+            >
               get in touch
             </button>
           </form>
