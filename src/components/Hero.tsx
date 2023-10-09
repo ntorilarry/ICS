@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "./Navbar";
 import { Player } from "@lottiefiles/react-lottie-player";
 import CountUp from "react-countup";
-
 import VisibilitySensor from "react-visibility-sensor";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Hero() {
+  useEffect(() => {
+    setTimeout(() => {
+      AOS.init();
+      AOS.refresh();
+    });
+  }, []);
   return (
     <div>
       <div className="bg-gradient-to-r from-[#B5FFFF] via-[#b5ffff6a] to-[#FFEED4]">
@@ -16,18 +23,36 @@ function Hero() {
             <div className="lg:py-6 grid max-w-lg grid-cols-1 mx-auto lg:max-w-full lg:items-center lg:grid-cols-2 gap-y-12 lg:gap-x-16">
               <div>
                 <div className="text-center lg:text-left">
-                  <span className="inline-flex items-center rounded-full bg-[#193151] font-medium bg-opacity-60 px-3 py-1 text-sm text-white shadow-sm">
+                  <span
+                    data-aos="fade-up"
+                    data-aos-duration="500"
+                    data-aos-once="true"
+                    className="inline-flex items-center rounded-full bg-[#193151] font-medium bg-opacity-60 px-3 py-1 text-sm text-white shadow-sm"
+                  >
                     THE BEST SOLUTIONS
                   </span>
-                  <h1 className="text-5xl mt-4 font-semibold text-[#193151] lg:text-7xl uppercase">
+                  <h1
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-once="true"
+                    className="text-5xl mt-4 font-semibold text-[#193151] lg:text-7xl uppercase"
+                  >
                     Visualize Your Ideas
                   </h1>
-                  <p className="mt-4 text-base font-medium text-[#193151]">
+                  <p
+                    data-aos="fade-up"
+                    data-aos-duration="1500"
+                    data-aos-once="true"
+                    className="mt-4 text-base font-medium text-[#193151]"
+                  >
                     We may not always follow the trend, but we are guaranteed to
                     provide the best in digital services
                   </p>
                   <div className="flex items-center justify-center mt-4 space-x-5 lg:justify-start">
                     <Link
+                      data-aos="fade-up"
+                      data-aos-duration="2000"
+                      data-aos-once="true"
                       to="/contact-us"
                       className="relative inline-flex items-center justify-start px-5 py-3 overflow-hidden font-semibold rounded-full group"
                     >
@@ -41,7 +66,9 @@ function Hero() {
                   </div>
                 </div>
               </div>
-              <div className="mt-auto">
+              <div  data-aos="fade-left"
+                      data-aos-duration="2500"
+                      data-aos-once="true" className="mt-auto">
                 {/* <img
                 className="w-full lg:w-[85%] m-auto"
                 src="https://placehold.co/600x600"
