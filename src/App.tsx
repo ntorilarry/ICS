@@ -9,10 +9,22 @@ import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
+import { Helmet, HelmetProvider } from "react-helmet-async";
+import GoogleTagManager from "./components/GoogleTag";
 
 function App() {
   return (
-    <div className="App">
+    <HelmetProvider>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>International Conglomerate Solution</title>
+      <meta
+        name="International Conglomerate Solution"
+        content="At International Conglomerate Solutions Limited, we aim to leverage the latest digital and technological ideas of invaluable thinkers to create ground-breaking solutions for every industry. We empower the foremost drivers that pioneer the latest technological breakthrough to propel our society towards digital diversity, equality and inclusion"
+      />
+      <link rel="canonical" href="https://www.ics-gh.org" />
+    </Helmet>
+    <div className="App">  
       <ScrollToTop />
       <Routes>
         {/* Main Routes */}
@@ -26,6 +38,7 @@ function App() {
       </Routes>
       <Footer />
     </div>
+    </HelmetProvider>
   );
 }
 
